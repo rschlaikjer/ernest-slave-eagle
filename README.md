@@ -1,14 +1,23 @@
-# Ernest
+# Ernest Slave Node Schematics
+Eagle files for data collection nodes
 
-### Multi-node meteorological data collector
+[Master Project Repo](https://github.com/rschlaikjer/Ernest)
 
-## What
-
+## What is this
 Ernest is the next step of the [ArNest](https://github.com/rschlaikjer/ArNest),
 and takes it from a single-location thermostat to a many node system consisting
 of a base station and one or more smaller nodes that collect and report
 atmospheric data to the base. This way the system can monitor multiple rooms, as
 well as the outside conditions.
 
-This repo currently just contains the EAGLE files for the smaller data gathering
-node.
+These EAGLE files show the schematic for hooking up the slave nodes, as well as
+a board layout for printing your own slave boards.
+
+For the code to run on the slave nodes,
+[see here](https://github.com/rschlaikjer/ernest-slave-code).
+
+## Pretty Pictures
+
+![Schematic](/schema_overview.png?raw=true "Schematic")
+
+![Early Prototype](/rev_0.1.jpg?raw=true "Early prototype")
