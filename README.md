@@ -18,6 +18,8 @@ For the code to run on the slave nodes,
 
 ## Pretty Pictures
 
-![Schematic](/schema_overview.png?raw=true "Schematic")
+![Schematic](/ernest_schematic.png?raw=true "Schematic")
+
+![Board Layout](/ernest_board.png?raw=true "Board Layout")
 
 ![Early Prototype](/rev_0.1.jpg?raw=true "Early prototype")
