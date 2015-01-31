@@ -5430,7 +5430,6 @@ Standard 8.5x11 US Letter frame</description>
 <part name="U$2" library="SparkFun-AnalogIC" deviceset="HIH6131" device=""/>
 <part name="IC1" library="Arduino-AVR" deviceset="ATMEGA168-PU" device="" value="ATMEGA328-P"/>
 <part name="U$1" library="GeekAmmo" deviceset="TACTILE-SWITCH" device="-PTH"/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="PTH" value="10uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="PTH" value="10uF"/>
 <part name="Y1" library="SparkFun-FreqCtrl" deviceset="CRYSTAL" device="HC49US" value="16MHz"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="PTH" value="22pF"/>
@@ -5438,7 +5437,6 @@ Standard 8.5x11 US Letter frame</description>
 <part name="R_RESET" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="10k"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="PTH" value="0.1uF"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="POWER_JACK" device="PTH"/>
-<part name="REG_5V" library="User-Submitted" deviceset="MOSFET-PCHANNEL" device="FQP27P06" value="LM7805"/>
 <part name="REG_3V" library="User-Submitted" deviceset="MOSFET-PCHANNEL" device="FQP27P06" value="LM1117"/>
 <part name="BMP180" library="SparkFun-Connectors" deviceset="M05" device="PTH" value="BMP"/>
 <part name="ERNEST" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="" value="Ernest">
@@ -5483,7 +5481,6 @@ Standard 8.5x11 US Letter frame</description>
 <instance part="U$2" gate="G$1" x="58.42" y="2.54"/>
 <instance part="IC1" gate="1" x="-83.82" y="50.8"/>
 <instance part="U$1" gate="G$1" x="-134.62" y="81.28"/>
-<instance part="C1" gate="G$1" x="-111.76" y="-43.18" rot="R270"/>
 <instance part="C2" gate="G$1" x="-93.98" y="-25.4"/>
 <instance part="Y1" gate="G$1" x="-121.92" y="60.96" rot="R90"/>
 <instance part="C3" gate="G$1" x="-134.62" y="63.5" rot="R90"/>
@@ -5491,7 +5488,6 @@ Standard 8.5x11 US Letter frame</description>
 <instance part="R_RESET" gate="G$1" x="-124.46" y="88.9" rot="R270"/>
 <instance part="C5" gate="G$1" x="33.02" y="2.54"/>
 <instance part="JP3" gate="G$1" x="-116.84" y="-53.34" rot="MR90"/>
-<instance part="REG_5V" gate="G$1" x="-106.68" y="-20.32" rot="MR90"/>
 <instance part="REG_3V" gate="G$1" x="-121.92" y="-20.32" rot="R90"/>
 <instance part="BMP180" gate="G$1" x="-7.62" y="2.54"/>
 <instance part="ERNEST" gate="G$1" x="-160.02" y="-71.12"/>
@@ -5594,17 +5590,12 @@ Standard 8.5x11 US Letter frame</description>
 <pinref part="REG_3V" gate="G$1" pin="G"/>
 <wire x1="-121.92" y1="-38.1" x2="-121.92" y2="-27.94" width="0.1524" layer="91"/>
 <label x="-121.92" y="-30.48" size="1.778" layer="95" rot="R270"/>
-<pinref part="REG_5V" gate="G$1" pin="G"/>
 <wire x1="-106.68" y1="-27.94" x2="-93.98" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="JP3" gate="G$1" pin="PWR"/>
-<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="-109.22" y1="-50.8" x2="-106.68" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="-106.68" y1="-50.8" x2="-106.68" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="-50.8" x2="-106.68" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-106.68" y1="-27.94" x2="-106.68" y2="-38.1" width="0.1524" layer="91"/>
-<junction x="-106.68" y="-27.94"/>
-<junction x="-106.68" y="-43.18"/>
-<wire x1="-106.68" y1="-38.1" x2="-106.68" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="-121.92" y1="-38.1" x2="-106.68" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="-106.68" y="-38.1"/>
 <pinref part="C7" gate="G$1" pin="2"/>
@@ -5667,23 +5658,6 @@ Standard 8.5x11 US Letter frame</description>
 <pinref part="IC1" gate="1" pin="DIGITAL_11(PWM)"/>
 <wire x1="-53.34" y1="25.4" x2="-45.72" y2="25.4" width="0.1524" layer="91"/>
 <label x="-50.8" y="25.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="JP3" gate="G$1" pin="GND"/>
-<wire x1="-114.3" y1="-43.18" x2="-114.3" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="GNDBREAK"/>
-<wire x1="-111.76" y1="-50.8" x2="-114.3" y2="-50.8" width="0.1524" layer="91"/>
-<junction x="-114.3" y="-50.8"/>
-<pinref part="REG_5V" gate="G$1" pin="S"/>
-<wire x1="-111.76" y1="-20.32" x2="-114.3" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="-22.86" x2="-114.3" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="-114.3" y="-43.18"/>
-<pinref part="REG_3V" gate="G$1" pin="S"/>
-<wire x1="-114.3" y1="-22.86" x2="-116.84" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="-114.3" y="-22.86"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -5958,11 +5932,19 @@ Standard 8.5x11 US Letter frame</description>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="REG_5V" gate="G$1" pin="D"/>
-<wire x1="-101.6" y1="-20.32" x2="-93.98" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="5V"/>
 <wire x1="-93.98" y1="-20.32" x2="-93.98" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="-93.98" y="-20.32"/>
+<pinref part="JP3" gate="G$1" pin="GND"/>
+<pinref part="JP3" gate="G$1" pin="GNDBREAK"/>
+<wire x1="-111.76" y1="-50.8" x2="-114.3" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="-114.3" y="-50.8"/>
+<wire x1="-111.76" y1="-20.32" x2="-114.3" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="-22.86" x2="-114.3" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="REG_3V" gate="G$1" pin="S"/>
+<wire x1="-114.3" y1="-22.86" x2="-116.84" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="-114.3" y="-22.86"/>
+<wire x1="-111.76" y1="-20.32" x2="-93.98" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="G$1" pin="VCC"/>
