@@ -16,6 +16,26 @@ a board layout for printing your own slave boards.
 For the code to run on the slave nodes,
 [see here](https://github.com/rschlaikjer/ernest-slave-code).
 
+## Parts list
+(All prices per unit and approximate)
+
+- ($2.00) Atmega 328P (with arduino-style bootloader)
+- ($3.19) USB FTDI programmer
+- ($1.50) BMP180 breakout board
+- ($13.75) (Optional) HIH-6130 humidity sensor
+- ($0.98) nrf24L01 wireless transciever
+- ($0.39) LM1117 3.3V regulator
+- ($0.07) 16 MHz crystal oscillator
+- ($0.03) 22pF capacitors
+- ($0.08) Momentary reset switch
+- ($0.32) 4-pin DIP switch
+- ($0.01) 320 Ohm resistors
+- ($0.03) LEDs
+- ($0.30) 2.5mm barrel jack (for power)
+
+**Total BOM: Approx. $5.86 per board** + 13.75 for humidity, as well as the cost
+of PCB manufacture.
+
 ## Pretty Pictures
 
 ![Schematic](/ernest_schematic.png?raw=true "Schematic")
