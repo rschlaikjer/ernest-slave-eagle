@@ -42,4 +42,4 @@ of PCB manufacture.
 
 ![Board Layout](/ernest_board.png?raw=true "Board Layout")
 
-![Early Prototype](/rev_0.1.jpg?raw=true "Early prototype")
+![Current Prototype](/rev4.jpg?raw=true "Current prototype")
